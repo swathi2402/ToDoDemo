@@ -4,7 +4,12 @@ import { connect } from "react-redux";
 const My = (props) => {
     return (
         <div>
-            {console.log(props.todos)}
+            <div>
+                {console.log(props.todos)}
+            </div>
+            <div>
+                {console.log(props.names)}
+            </div>
         </div>
     );
 }
@@ -12,6 +17,7 @@ const My = (props) => {
 const mapStateToProps = (store) => {
     return {
         todos: store.todos,
+        names: store.names,
     };
 };
 
